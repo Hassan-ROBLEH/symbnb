@@ -57,7 +57,7 @@ class AdType extends ApplicationType
             ->add(
                 'price',
                 MoneyType::class, 
-                $this->getConfiguration("prix par nuit", "indiquez le prix que vous voulez pour une une nuit")
+                $this->getConfiguration("Prix par nuit", "indiquez le prix que vous voulez pour une une nuit")
             )
             ->add('images',CollectionType::class, [
                 'entry_type' => ImageType::class,
